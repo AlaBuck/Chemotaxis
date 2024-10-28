@@ -2,13 +2,6 @@ class Leaf{
   int myC;
   int myX,myY,myYspeed;
   
-  Leaf(){
-    myC=color(216,48,48);
-    myX=(int)(Math.random()*400);
-    myY=(int)(Math.random()*400);
-    myYspeed=1;
-  }
-  
   Leaf(color c,int x, int y, int s){
    myC = c;
    myX = x;
