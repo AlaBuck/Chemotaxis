@@ -1,8 +1,8 @@
-class Leaf{
+class Snow{
   int myC;
   int myX,myY,myYspeed;
   
-  Leaf(color c,int x, int y, int s){
+  Snow(color c,int x, int y, int s){
    myC = c;
    myX = x;
    myY = y;
@@ -26,19 +26,18 @@ class Leaf{
   }
 }
 }
-Leaf[] leaf;
+Snow[] flake;
 void setup(){
   size(400,400);
-  background(87,177,252);
-  leaf=new Leaf[10];
-  for(int i=0; i<leaf.length; i++){
-    leaf[i]=new Leaf(254, (int)(Math.random()*400),0,1);
+  flake=new Snow[10];
+  for(int i=0; i<flake.length; i++){
+    flake[i]=new Snow(254, (int)(Math.random()*400),0,1);
   }
 }
 void draw(){
-  background(87,177,252);
-  for(int i=0; i<leaf.length; i++){
-    leaf[i].show();
-    leaf[i].move();
+  background(4,22,44);
+  for(int i=0; i<flake.length; i++){
+    flake[i].show();
+    flake[i].move();
   }
 }
