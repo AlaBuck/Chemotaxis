@@ -1,15 +1,15 @@
 class Leaf{
   int myC;
-  float myX,myY,myYspeed;
+  int myX,myY,myYspeed;
   
   Leaf(){
     myC=color(216,48,48);
-    myX=(float)(Math.random()*400);
-    myY=(float)(Math.random()*400);
+    myX=(int)(Math.random()*400);
+    myY=(int)(Math.random()*400);
     myYspeed=1;
   }
   
-  Leaf(color c,float x, float y, float s){
+  Leaf(color c,int x, int y, int s){
    myC = c;
    myX = x;
    myY = y;
